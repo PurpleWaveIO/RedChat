@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - OPEN_WEBUI_API_KEY=${OPEN_WEBUI_API_KEY}
+    volumes:
+      - .:/app
+    command: python app.py
