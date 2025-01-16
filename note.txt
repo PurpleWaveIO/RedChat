@@ -1,0 +1,3 @@
+CORS: You might need to configure your Open WebUI server to handle CORS. For instance, if you're running Open WebUI with Docker, you could modify the docker-compose.yml or nginx configuration to include:
+environment:
+  - CORS_ALLOW_ORIGIN=http://your-embedding-website.com
