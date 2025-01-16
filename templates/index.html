@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        #chatbot {
+            width: 350px;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Chatbot Page</h1>
+    <p>Here's where you can interact with our chatbot:</p>
+    <iframe id="chatbot" src="{{ url_for('chat_page') }}"></iframe>
+</body>
+</html>
